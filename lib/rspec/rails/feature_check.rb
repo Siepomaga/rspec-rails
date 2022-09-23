@@ -28,7 +28,7 @@ module RSpec
       end
 
       def has_action_mailer_parameterized?
-        has_action_mailer? && defined?(::ActionMailer::Parameterized)
+        has_action_mailer? && defined?(::ActionMailer::Parameterized::DeliveryJob)
       end
 
       def has_action_mailer_unified_delivery?
